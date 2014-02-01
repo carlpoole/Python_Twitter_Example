@@ -3,10 +3,10 @@ import re
 
 # --- oAuth Information -----------------------------------------------
 
-OAUTH_TOKEN		= ''
+OAUTH_TOKEN		    = ''
 OAUTH_SECRET		= ''
 CONSUMER_KEY		= ''
-CONSUMER_SECRET	= ''
+CONSUMER_SECRET	    = ''
 
 # ---------------------------------------------------------------------
 
@@ -17,12 +17,12 @@ class Carltwitter:
         # Some color constants for formatting
         self.BLUE		= '\033[94m'
         self.GREEN		= '\033[92m'
-        self.RED			= '\033[91m'
-        self.MAGENTA		= '\033[95m'
+        self.RED		= '\033[91m'
+        self.MAGENTA	= '\033[95m'
         self.ENDCOLOR	= '\033[0m'
 
         # Some regex pattern compilations for coloring usernames and hashtags
-        self.reUser 		= re.compile(r"(?<=^|(?<=[^a-zA-Z0-9-\.]))@([A-Za-z_]+[A-Za-z0-9_]+)")
+        self.reUser 	= re.compile(r"(?<=^|(?<=[^a-zA-Z0-9-\.]))@([A-Za-z_]+[A-Za-z0-9_]+)")
         self.reHashtag	= re.compile(r"(?<=^|(?<=[^a-zA-Z0-9-\.]))#([A-Za-z_]+[A-Za-z0-9_]+)")
 
         # Setup Twitter API
